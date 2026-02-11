@@ -8,11 +8,11 @@ env:
   MONGODB_DB_NAME: gha-demodb
 jobs:
   test:
-  env:
-    MONGODB_CLUSTER_ACCESS: cluster0.w4uupuc.mongodb.net
-    MONGODB_USERNAME: admin
-    MONGODB_PASSWORD: admin123
-    PORT: 3000
+    env:
+      MONGODB_CLUSTER_ACCESS: cluster0.w4uupuc.mongodb.net
+      MONGODB_USERNAME: admin
+      MONGODB_PASSWORD: admin123
+      PORT: 3000
     environment: testing
     runs-on: ubuntu-latest
     steps:
@@ -38,3 +38,4 @@ jobs:
       - name: Output information
         run: |
           echo "${{ env.MONGODB_DB_NAME }}"
+
