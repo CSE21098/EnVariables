@@ -10,7 +10,7 @@ env:
 jobs:
   test:
     env:
-      MONGODB_CLUSTER_ACCESS: cluster0.w4uupuc.mongodb.net/?appName=Cluster0
+      MONGODB_CLUSTER_ACCESS: cluster0.w4uupuc.mongodb.net
       MONGODB_USERNAME: admin
       MONGODB_PASSWORD: admin123
       PORT: 3000
